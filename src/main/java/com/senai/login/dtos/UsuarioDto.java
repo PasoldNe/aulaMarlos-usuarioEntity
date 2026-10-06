@@ -1,40 +1,46 @@
-package com.senai.login.dtos;
+package com.senai.acesso.dtos;
 
 public class UsuarioDto {
 
-    //dto de entrada de usuario
+    //--DTO de Entrada de dados
+    /* Exemplo
 
-    /*ex:
     {
-        "cpf" : "000.111.222-33",
-        "nome" : "Eu",
-        "login" : "Admin",
-        "senha" : "123admin"
+        "cpf" : "111.111.111-11",
+        "nome": "Aluno 1",
+        "login" : "login1",
+        "senha" : "senha123"
     }
-     */
+    {
+        "cpf" : "676.767.676-67",
+        "nome" : "TungTungSahur",
+        "login" : "broxa",
+        "senha" : "comecu"
+    }
+    {
+        "cpf" : "333.333.333-33",
+        "nome": "Aluno 3",
+        "login" : "login3",
+        "senha" : "senha345"
+    }
+
+    */
+
+
     private String cpf;
     private String nome;
     private String login;
     private String senha;
 
-
     public UsuarioDto() {
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     public String getLogin() {
@@ -45,11 +51,19 @@ public class UsuarioDto {
         this.login = login;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getNome() {
+        return nome;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 }

@@ -1,17 +1,14 @@
-package com.senai.acesso.models;
+package com.senai.acesso.dtos;
 
-public class UsuarioEntity {
+public class UsuarioRespostaDto {
 
-    //--Atributos do usuário
     private String cpf;
     private String nome;
     private String login;
-    private String senha;
 
-    //--Construtor vazio
-    public UsuarioEntity() { }
+    public UsuarioRespostaDto() {
+    }
 
-    //--getters e setters
     public String getCpf() {
         return cpf;
     }
@@ -34,13 +31,5 @@ public class UsuarioEntity {
 
     public void setLogin(String login) {
         this.login = login;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
     }
 }
